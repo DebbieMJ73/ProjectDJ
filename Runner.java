@@ -8,6 +8,8 @@ public class Runner {
 
         //Call getAverage method
         myScores.getAverage();
+        System.out.println(myScores);
+        System.out.println(myScores.getAve());
 
 
 

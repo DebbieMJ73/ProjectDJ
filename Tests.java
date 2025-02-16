@@ -39,7 +39,7 @@ public class Tests {
     public String toString() {
 
         String output = "Result: \n";
-        output += ("The average of the " + this.getCount() + " scores " + " entered is " + this.getAve());
+        output += ("The average of the " + this.getCount() + " scores " + "entered is " + this.getAve());
 
         return output;
 
