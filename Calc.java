@@ -60,9 +60,9 @@ public class Calc
         output += "Calling num1 get method: " + this.getNum1() + "\n";
         output += "Calling num2 get method: " + this.getNum2() + "\n";
         output += "The sum is: " + add() + "\n";
-        output += "The difference is: " + subtract() + "\n";
-        output += "The product is: " + multiply() + "\n";
-        output += "The quotient is: " + divide();
+        output += "The difference is: " + this.subtract() + "\n";
+        output += "The product is: " +this. multiply() + "\n";
+        output += "The quotient is: " + String.format("%.2f",this.divide());
 
         return output;
 
