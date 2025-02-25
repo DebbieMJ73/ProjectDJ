@@ -1,3 +1,5 @@
+//Debbie Johnson
+
 //this class tests all methods in the Calc class
 //the Calc class exposes the following methods:
 //add, subtract, multiply, divide
@@ -7,11 +9,24 @@ public class Runner {
     public static void main(String[] args){
         //instantiate a Calc object
         Calc myCalculator = new Calc();
+
         //get user input for two numbers
         Scanner scan = new Scanner(System.in);
+
+        //Validate user inputs first  number
         System.out.println("Please enter the first number: ");
+        while(!scan.hasNextDouble()) {
+            System.out.println("Please enter a valid number: ");
+            scan.next();
+        }
         double n1 = scan.nextDouble();
+
+        //Validate user inputs second number
         System.out.println("Please enter the second number: ");
+        while(!scan.hasNextDouble()) {
+            System.out.println("Please enter a valid number: ");
+            scan.next();
+        }
         double n2 = scan.nextDouble();
 
         //pass the numbers to the Calc object
@@ -33,6 +48,6 @@ public class Runner {
         //or if you don't, then just display the difference, product and quotient
         System.out.println("The difference is: " + myCalculator.subtract());
         System.out.println("The product is: " + myCalculator.multiply());
-        System.out.println("The quotient is: " + myCalculator.divide());
+        System.out.println("The quotient is: " + String.format("%.2f",myCalculator.divide()));
     }
 }
