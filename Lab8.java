@@ -11,7 +11,7 @@ public class Lab8 {
         String inputFile = "pay.csv";
         String outputFile = "output.csv";
 
-        DecimalFormat df = new DecimalFormat("$#,##0.00");
+        DecimalFormat df = new DecimalFormat("$#0.00");
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
              BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile)))
